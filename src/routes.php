@@ -1,0 +1,10 @@
+<?php
+$routes=[
+    'login',
+    'register',
+    'logaction',
+    'dashboard',
+    'registeraction',
+    'error',
+    'home'
+];
