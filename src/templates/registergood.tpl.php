@@ -9,6 +9,5 @@
 <?php
     include 'partials/nav.tpl.php';
 ?>
-   
 </body>
 </html>

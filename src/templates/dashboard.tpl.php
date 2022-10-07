@@ -3,12 +3,11 @@
     ?>
 <body>
     <header>
-        <h1><?=$title;?></h1>
+        <h1><?=$title;?><?=$_SESSION['user']->uname;?></h1>
         <hr>
     </header>
 <?php
     include 'partials/nav.tpl.php';
 ?>
-   
 </body>
 </html>
