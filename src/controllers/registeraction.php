@@ -5,8 +5,9 @@
     // Si existe => dashboard y abrir sesion user
     // Si no existe => volver a home o formulario
     $db=connectMysql($dsn,$dbuser,$dbpass);
-    if(!empty($_POST['mail'])&& !empty($_POST['password'])&& !empty($_POST['uname'])){
-        if(isset($_POST['mail'])&&isset($_POST['password'])&&isset($_POST['uname'])){
+    if(isset($_POST['mail'])&&isset($_POST['password'])&&isset($_POST['uname'])){
+        if(filter_input(INPUT_POST,'mail') && filter_input(INPUT_POST,'password')&& filter_input(INPUT_POST,'uname')){
+        
             $mail=$_REQUEST['mail'];
             $passwd=$_REQUEST['password'];
             $uname=$_REQUEST['uname'];

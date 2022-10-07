@@ -26,7 +26,7 @@ function connectMysql(string $dsn,string $dbuser,string $dbpass){
     }
     function registeruser($db,string $email,string $password,string $uname):bool{
         $stmt=$db->prepare("INSERT INTO users(email,uname,passw)VALUES(:email,:uname,:passwd) LIMIT 1");
-        $cryptpasswd=password_hash($password,PASSWORD_BCRYPT);
+        $cryptpasswd=password_hash($password,PASSWORD_BCRYPT,['cost'=>'4']);
         if($stmt->execute([':email'=>$email,':uname'=>$uname,'passwd'=>$cryptpasswd])){
             return true;
         }else{

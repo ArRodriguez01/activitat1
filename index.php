@@ -1,5 +1,5 @@
 <?php
-
+    
     session_start();
     //configuracion entorno
     require 'config.php';
