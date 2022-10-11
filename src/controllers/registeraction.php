@@ -6,11 +6,11 @@
     // Si no existe => volver a home o formulario
     $db=connectMysql($dsn,$dbuser,$dbpass);
     if(isset($_POST['mail'])&&isset($_POST['password'])&&isset($_POST['uname'])){
-        if(filter_input(INPUT_POST,'mail') && filter_input(INPUT_POST,'password')&& filter_input(INPUT_POST,'uname')){
+        if(!empty($_POST['mail']) && !empty($_POST['password'])&& !empty($_POST['uname'])){
         
-            $mail=$_REQUEST['mail'];
-            $passwd=$_REQUEST['password'];
-            $uname=$_REQUEST['uname'];
+            $mail=filter_input(INPUT_POST,'mail',FILTER_SANITIZE_EMAIL);
+            $passwd=filter_input(INPUT_POST,'password',FILTER_SANITIZE_STRING);
+            $uname=filter_input(INPUT_POST,'uname',FILTER_SANITIZE_STRING);
             if(registeruser($db,$mail,$passwd,$uname)){
                 header('Location:?url=registergood');
             }else{
