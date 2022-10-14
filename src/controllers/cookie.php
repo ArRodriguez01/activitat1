@@ -6,6 +6,7 @@ if(isset($_POST['destroy'])||isset($_POST['login'])){
         setcookie('cookmail',"",time() - 3600);
         setcookie('cookpassword',"",time() - 3600);
         setcookie('cookuser',"",time() - 3600);
+        setcookie('cooktime',"",time() - 3600);
         header('Location:?url=login');
     }else{
         if(isset($_COOKIE["cookmail"])&&isset($_COOKIE["cookpassword"])&&isset($_COOKIE["cookuser"])){
@@ -17,7 +18,7 @@ if(isset($_POST['destroy'])||isset($_POST['login'])){
             }else{
                 header('Location:?url=login');
             }
-        }
+        }setcookie("cooktime",getdate());
     }
 }else{
     header('Location:?url=login');

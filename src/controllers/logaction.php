@@ -16,6 +16,7 @@
                     setcookie("cookmail",$_POST['mail']);
                     setcookie("cookpassword",$_POST['password']);
                     setcookie("cookuser",$_SESSION['user']->uname);
+                    setcookie("cooktime",getdate());
                 }
             }else{
                 header('Location:?url=login');

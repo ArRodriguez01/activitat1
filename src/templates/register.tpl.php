@@ -16,6 +16,12 @@
         <br>
         <input name="uname" placeholder="NombreUser" id="uname" type="text">
         <br>
+        <select name="rol" id=rol>
+            <option value="alumno">Alumno</option>
+            <option value="profesor">Profesor</option>
+        </select>
+        <br>
+        <br>
         <button id="send">REGISTRATE</button>
     </form>
 </body>
