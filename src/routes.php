@@ -10,6 +10,7 @@ $routes=[
     'registeraction',
     'registergood',
     'logout',
-    'cookie'
+    'cookie',
+    'setting'
     
 ];

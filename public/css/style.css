@@ -6,10 +6,7 @@ h1{
     color:gold;
 }
 body{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
 }
 form{
     margin-top: 5px;

@@ -3,7 +3,7 @@
     ?>
 <body>
     <header>
-        <h1><?=$title;?><?=$_SESSION['user']->uname;?></h1>
+        <h1><?=$title;?><?=$_SESSION['user']->uname;?>(<?=$_SESSION['user']->rol;?>)</h1>
         <hr>
     </header>
 <?php

@@ -23,6 +23,7 @@
         <p>Tiene una cookie del user: <?=$_COOKIE["cookuser"];?> de la ultima sesión:<?=date('l,d,F Y;H:i:s');?></p>
         <form action="?url=cookie" method="POST">
         <button name="login" value="">Iniciar sesión</button>
+        <br>
         <button name="destroy" value="">No logear</button>
         </form>
         <?php endif;?>
