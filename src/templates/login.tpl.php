@@ -17,7 +17,6 @@
         <br>
         <label>Recuerdame en este equipo</label>
         <input name="remember" id="recordar" type="checkbox">
-        <br>
         <button id="send">ENVIAR</button>
     </form>
     <?php else:?>

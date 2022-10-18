@@ -1,7 +1,27 @@
 
 body{
-    background-color: grey;
+    background-color: #8BC4E0;
 }
 h1{
-    color:lime;
+    color:gold;
+}
+body{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    margin-top: 5px;
+    background-color: #2099B6;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    border-radius: 15px;
+}
+form input{
+    width: 50%;
 }
