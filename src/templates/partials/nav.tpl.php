@@ -13,7 +13,7 @@
     
                     <ul class="menu__nesting">
                         <li class="menu__inside">
-                            <a href="#" class="menu__link menu__link--inside">Settings</a>
+                            <a href="?url=setting" class="menu__link menu__link--inside">Settings</a>
                         </li>
                         <li class="menu__inside">
                             <a href="#" class="menu__link menu__link--inside">About 2</a>

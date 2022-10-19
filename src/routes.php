@@ -11,6 +11,7 @@ $routes=[
     'registergood',
     'logout',
     'cookie',
-    'setting'
+    'setting',
+    'settingaction'
     
 ];
