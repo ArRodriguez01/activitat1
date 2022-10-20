@@ -13,7 +13,7 @@ function connectMysql(string $dsn,string $dbuser,string $dbpass){
         return $db;
     }
     function auth($db,string $email,string $password):bool{
-        $stmt=$db->prepare("SELECT * FROM users WHERE email=:email LIMIT 1");
+        $stmt=$db->prepare("SELECT * FROM users WHERE email=:email");
         $res=$stmt->execute([':email'=>$email]);
             if($stmt->rowCount()==1){
                 $user=$stmt->fetchAll()[0];

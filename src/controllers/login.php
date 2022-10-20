@@ -1,5 +1,5 @@
 <?php
     //render template home
     require 'src/render.php';
-    $title="FORM LOGIN";
-    echo render('login',['title'=>'FORM LOGIN']);
+    $title="LOGEATE";
+    echo render('login',['title'=>$title]);

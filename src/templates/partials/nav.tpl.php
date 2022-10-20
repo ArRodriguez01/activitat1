@@ -5,8 +5,10 @@
         <a href="?url=login">Login</a>
         <a href="?url=register">Register</a>
         <?php else:?>
-        <a href="?url=logout">Logout <?=$_SESSION['user']->uname;?></a>
         <a href="?url=dashboard">Home</a>
+
+        <h4> <p><?= implode($_SESSION['routes']);?></p></h4>
+        <br>
         <section class="menu__container">
         <li class="menu__item menu__item--show">
                     <div><a href="#" class="menu__link">User<img src="../../../public/assets/arrow.svg" class="menu__arrow"></a></div>
@@ -16,10 +18,10 @@
                             <a href="?url=setting" class="menu__link menu__link--inside">Settings</a>
                         </li>
                         <li class="menu__inside">
-                            <a href="#" class="menu__link menu__link--inside">About 2</a>
+                            <a href="?url=profile" class="menu__link menu__link--inside" >Perfil</a>
                         </li>
                         <li class="menu__inside">
-                            <a href="#" class="menu__link menu__link--inside">About 3</a>
+                            <a href="?url=logout" class="menu__link menu__link--inside">Logout</a>
                         </li>
                     </ul>
         <div class="menu__hamburguer">

@@ -12,6 +12,7 @@ $routes=[
     'logout',
     'cookie',
     'setting',
-    'settingaction'
+    'settingaction',
+    'profile'
     
 ];

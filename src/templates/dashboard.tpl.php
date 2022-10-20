@@ -4,6 +4,7 @@
 <body>
     <header>
         <h1><?=$title;?><?=$_SESSION['user']->uname;?>(<?=$_SESSION['user']->rol;?>)</h1>
+        <br>
         <hr>
     </header>
 <?php
