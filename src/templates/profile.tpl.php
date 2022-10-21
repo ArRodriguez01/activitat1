@@ -2,14 +2,12 @@
     include 'partials/header.tpl.php';
     ?>
 <body>
-    <header>
-        <h1><?=$title;?></h1>
-        <hr>
-    </header>
+ 
 <?php
     include 'partials/nav.tpl.php';
 ?>
-    <div>
+     <h5><?=$title;?></h5>
+     <div class="detalles">
     <h2>Detalles de usuario</h2><br>
     Nombre: <?=$_SESSION['user']->uname;?><br>
     Correo: <?=$_SESSION['user']->email;?><br>

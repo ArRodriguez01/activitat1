@@ -1,17 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
 
+@font-face{
+    font-family: Saudagar;
+    src: url(Saudagar.ttf);
+}
+
+@font-face{
+    font-family: Butler ;
+    src: url(Butler/Butler_Regular.otf);
+}
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: butler;
 }
 
-body{
-    font-family: 'Poppins', sans-serif;
-}
+
 a{
     text-decoration:none;
+    color: black;
 }
 .menu{
     background-color: #1A202C;
@@ -20,7 +28,7 @@ a{
 }
 nav{
     display: flex;
-    width: 70%;
+    width: 100%;
     justify-content: flex-end;
 }
 
@@ -28,7 +36,6 @@ nav{
     display: flex;
     max-width: 1200px;
     height: 100%;
-    margin: 0 auto;
 }
 
 .menu__links{
@@ -78,7 +85,7 @@ nav{
     bottom: 0;
     width: max-content;
     transform: translateY(100%);
-    background-color: #000;
+    background-color: #095265;
 }
 
 .menu__link--inside{
@@ -102,6 +109,100 @@ nav{
     display: block;
     width: 36px;
 }
+
+body{
+    background-color: #8BC4E0;
+}
+h1{
+    color:gold;
+}
+
+
+form{
+    background-color: #2099B6;
+    margin: auto;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    box-shadow: 7px 13px 37px #095265;
+    padding: 20px 30px;
+    margin-top: 100px;
+}
+.links{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.buttonPer{
+    width: 100px;
+    height: 30px;
+    background-color: #095265;
+    border: none;
+    color: white;
+    padding-left: 10px;
+}
+.pers{
+    padding: 15px;
+}
+label{
+  font-size: 17px;
+  font-family: butler_bold;
+}
+h5{
+margin: 0;
+text-align: center;
+height: 40px;
+margin-bottom: 30px;
+border-bottom: 1px solid;
+font-size: 20px;
+color: white;
+}
+
+.buttons{
+    width: 100px;
+    height: 40px;
+    background-color: #095265;
+    border: none;
+    color: white;
+    margin: 10px;
+   
+}
+
+.detalles{
+    padding: 20px;
+    background-color: #2099B6;
+    width: 40%;
+    margin: auto;
+}
+.recuerdameDiv{
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    
+}
+
+#recordar{
+    width: 15px;
+    height: 15px;
+}
+
+form input{
+    width: 100%;
+    border: 1px solid #095265;
+    margin-bottom: 15px;
+    padding: 11px 10px;
+    background: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+
 
 @media (max-width:800px){
     .menu__hamburguer{
@@ -159,27 +260,4 @@ nav{
         margin-left: auto;
         border-left: 1px solid #798499;
     }
-}
-body{
-    background-color: #8BC4E0;
-}
-h1{
-    color:gold;
-}
-body{
-    
-}
-form{
-    margin-top: 5px;
-    background-color: #2099B6;
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 30vh;
-    border-radius: 15px;
-}
-form input{
-    width: 50%;
 }

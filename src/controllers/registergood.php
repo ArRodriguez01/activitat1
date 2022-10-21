@@ -1,5 +1,5 @@
 <?php
     //render template home
     require 'src/render.php';
-    $title="USER REGISTRADO";
+    $title="USUARIO REGISTRADO";
     echo render('registergood',['title'=>$title]);

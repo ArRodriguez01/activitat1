@@ -1,4 +1,4 @@
 <?php
 require 'src/render.php';
-    $title="Settings";
+    $title="Ajustes";
     echo render('setting',['title'=>$title]);

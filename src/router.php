@@ -1,11 +1,5 @@
 <?php
     
-/**
- * retorno controlador
- * 
- * @return string
- * 
- */
 function getRoute(array $routes):string{
     if(isset($_REQUEST['url'])){
         $url=$_REQUEST['url'];

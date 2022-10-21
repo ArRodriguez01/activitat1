@@ -1,6 +1,6 @@
 <?php
     //render template home
     require 'src/render.php';
-    $title="COLEGIO IT";
+    $title="BIENVENIDOS";
     
     echo render('home',['title'=>$title]);

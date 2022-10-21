@@ -1,28 +1,19 @@
 <?php
     include 'partials/header.tpl.php';
     ?>
-<body>
-    <header>
-        <h1><?=$title;?></h1>
-        <hr>
-    </header>
 <?php
     include 'partials/nav.tpl.php';
 ?>
     <form action="?url=registeraction" method="POST">
-        <input name="mail" placeholder="mail" id="mail" type="mail">
-        <br>
-        <input name="password" placeholder="contraseña" id="passwd" type="password">
-        <br>
-        <input name="uname" placeholder="NombreUser" id="uname" type="text">
-        <br>
-        <select name="rol" id=rol>
+        <h5><?=$title;?></h5>
+        <input name="mail" placeholder="Correo electrónico" id="mail" type="mail">
+        <input name="password" placeholder="Contraseña" id="passwd" type="password">
+        <input name="uname" placeholder="Nombre de Usuario" id="uname" type="text">
+        <select name="rol" id=rol class="buttons">
             <option value="alumno">Alumno</option>
             <option value="profesor">Profesor</option>
         </select>
-        <br>
-        <br>
-        <button id="send">REGISTRATE</button>
+        <button id="send" class="buttons">Registrate</button>
     </form>
 </body>
 </html>

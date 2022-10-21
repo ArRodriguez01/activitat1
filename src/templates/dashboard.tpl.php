@@ -1,15 +1,11 @@
 <?php
     include 'partials/header.tpl.php';
     ?>
-<body>
-    <header>
-        <h1><?=$title;?><?=$_SESSION['user']->uname;?>(<?=$_SESSION['user']->rol;?>)</h1>
-        <br>
-        <hr>
-    </header>
 <?php
     include 'partials/nav.tpl.php';
 ?>
+
+<h5><?=$title;?><?=$_SESSION['user']->uname;?>(<?=$_SESSION['user']->rol;?>)</h5>
     <?php if(($_SESSION['user'])->rol=="profesor"):?>
     <h3>Examenes por corregir<h3>
     <?php else:?>

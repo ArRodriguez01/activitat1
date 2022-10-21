@@ -1,12 +1,5 @@
 <?php
 
-/**
- * render template
- * 
- * @param string $tpl
- * @return string
- */
-
     function render(string $tpl,array $data=[]):string{
         if($data){
             extract($data,EXTR_OVERWRITE);
