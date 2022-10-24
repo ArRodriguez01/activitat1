@@ -1,12 +1,11 @@
-
-/*let color;
 let cut=document.cookie.split(";");
-color=cut["5"];
+const color=cut[cut.length-1];
 var bt1=document.getElementById("bt1");
-color=color.split("=");
-console.log(color["1"]);*/
-let bg= document.body.style.backgroundColor;
-console.log(bg);
-/*bt1.addEventListener("click",function(){
-    bg=color;
-})*/
+let cut2=color.split("=");
+const colord=cut2[1];
+console.log(colord);
+const doc =document.body.style.backgroundColor;
+bt1.addEventListener("click",function(){
+   
+   doc=`${colord}`;
+})
